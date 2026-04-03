@@ -1,0 +1,45 @@
+<div class="section" id="booking">
+    <h2>Book Your Japan Experience</h2>
+    <p>Fill out the form below to plan your dream trip to Japan.</p>
+
+    <form action="#" method="post" style="
+        background: white; 
+        padding: 25px; 
+        border-radius: 10px; 
+        max-width: 600px; 
+        margin: auto; 
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+
+        <label for="name"><strong>Your Name</strong></label><br>
+        <input type="text" id="name" name="name" required 
+               style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;"><br>
+
+        <label for="email"><strong>Email</strong></label><br>
+        <input type="email" id="email" name="email" required 
+               style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;"><br>
+
+        <label for="date"><strong>Travel Date</strong></label><br>
+        <input type="date" id="date" name="date" required 
+               style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;"><br>
+
+        <label for="package"><strong>Select Package</strong></label><br>
+        <select id="package" name="package" required 
+                style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;">
+            <option value="">-- Choose a Package --</option>
+            <option value="tokyo">Tokyo City Tour</option>
+            <option value="kyoto">Kyoto Heritage Experience</option>
+            <option value="mount-fuji">Mount Fuji Adventure</option>
+            <option value="full-japan">Full Japan 7-Day Tour</option>
+        </select><br>
+
+        <label for="message"><strong>Special Requests (Optional)</strong></label><br>
+        <textarea id="message" name="message" rows="4" 
+                  style="width:100%; padding:10px; margin:10px 0; border-radius:5px; border:1px solid #ccc;"></textarea><br>
+
+        <button type="submit" 
+                style="background:#c41230; color:white; padding:12px 20px; border:none; 
+                       border-radius:5px; cursor:pointer; font-size:1rem;">
+            Submit Booking
+        </button>
+    </form>
+</div>

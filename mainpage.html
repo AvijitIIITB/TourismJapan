@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Tourism</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-image: url('https://images.unsplash.com/photo-1549692520-acc6669e2f0c');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        header h1 {
+            font-size: 4rem;
+        }
+
+        nav {
+            background: #c41230;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h2 {
+            color: #c41230;
+            font-size: 2rem;
+        }
+
+        .spots {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .spot {
+            background: white;
+            padding: 20px;
+            flex: 1 1 calc(33% - 20px);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .spot img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Japan</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Japan</a>
+        <a href="#spots">Tourist Spots</a>
+        <a href="#video">Advertisement</a>
+        <a href="#contact">Contact</a>
+        
+<a href="tourweb.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
+    Booking
+</a>
+
+    </nav>
+
+    <div class="section" id="about">
+        <h2>Discover Japan</h2>
+        <p>
+            Ready for Your Next-Level Adventure? Where ancient magic meets neon dreams. Japan isn’t just a destination — it’s a whole vibe 		    upgrade. Experience your dreams with: 
+					✨ Aesthetic cafés
+					🎎 Cultural deep dives
+					🌸 Insta-perfect moments
+					🚅 Hyper-fast everything
+					🎮 Anime, tech, gaming
+					🍣 Food with unforgettable taste.
+	 </p>
+	 <p>
+	    Do you know? Best travel experiences are those which you instantly plan. Pack your bags, Japan calling!
+         </p>
+    </div>
+
+    <div class="section" id="spots">
+        <h2>Popular Tourist Spots</h2>
+
+        <div class="spots">
+            <div class="spot">
+                <img src="Mountain_Fuji_image_202604031815.jpeg" />
+                <h3>Mount Fuji</h3>
+                <p>Japan's iconic mountain and a UNESCO World Heritage Site.</p>
+            </div>
+
+            <div class="spot">
+                <img src="photo-1554797589-7241bb691973.jpg" />
+                <h3>Tokyo</h3>
+                <p>Experience futuristic tech, fashion, anime, and world-class cuisine.</p>
+            </div>
+
+            <div class="spot">
+                <img src="photo-1492562080023-ab3db95bfbce.jpg" />
+                <h3>Kyoto Temples</h3>
+                <p>Historic shrines, cherry blossoms, and the heart of Japanese tradition.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="video">
+        <h2>Promotional Advertisement</h2>
+        <p>Below is the provision to add your MP4 advertisement video:</p>
+
+        <!-- ✅ Add your MP4 file here -->
+        <video controls>
+            <source src="Walk_in_Japan_202604031734.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer id="contact">
+        <p>Japan Tourism Board © 2026 | Explore the Land of the Rising Sun</p>
+    </footer>
+
+</body>
+</html>
