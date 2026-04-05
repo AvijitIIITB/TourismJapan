@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,10 +23,12 @@
             justify-content: center;
             align-items: center;
             text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+            padding: 0 20px;
+            text-align: center;
         }
 
         header h1 {
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         nav {
@@ -39,10 +42,12 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+            display: inline-block;
+            padding: 5px 0;
         }
 
         .section {
-            padding: 40px;
+            padding: 30px;
             max-width: 1200px;
             margin: auto;
         }
@@ -83,6 +88,48 @@
             border-radius: 10px;
             margin-top: 20px;
         }
+
+        /* ✅ MOBILE RESPONSIVE FIXES */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .spot {
+                flex: 1 1 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .spots {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 40vh;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            body {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 
@@ -97,27 +144,14 @@
         <a href="#spots">Tourist Spots</a>
         <a href="#video">Advertisement</a>
         <a href="#contact">Contact</a>
-        
-<a href="tourweb.html" style="color:white; margin:0 15px; text-decoration:none; font-weight:bold;">
-    Booking
-</a>
-
+        <a href="tourweb.html">Booking</a>
     </nav>
 
     <div class="section" id="about">
         <h2>Discover Japan</h2>
         <p>
-            Ready for Your Next-Level Adventure? Where ancient magic meets neon dreams. Japan isn’t just a destination — it’s a whole vibe 		    upgrade. Experience your dreams with: 
-					✨ Aesthetic cafés
-					🎎 Cultural deep dives
-					🌸 Insta-perfect moments
-					🚅 Hyper-fast everything
-					🎮 Anime, tech, gaming
-					🍣 Food with unforgettable taste.
-	 </p>
-	 <p>
-	    Do you know? Best travel experiences are those which you instantly plan. Pack your bags, Japan calling!
-         </p>
+            Ready for Your Next-Level Adventure? Where ancient magic meets neon dreams...
+        </p>
     </div>
 
     <div class="section" id="spots">
@@ -139,19 +173,15 @@
             <div class="spot">
                 <img src="photo-1492562080023-ab3db95bfbce.jpg" />
                 <h3>Kyoto Temples</h3>
-                <p>Historic shrines, cherry blossoms, and the heart of Japanese tradition.</p>
+                <p>Historic shrines, cherry blossoms, and Japan’s traditions.</p>
             </div>
         </div>
     </div>
 
     <div class="section" id="video">
         <h2>Promotional Advertisement</h2>
-        <p>Below is the provision to add your MP4 advertisement video:</p>
-
-        <!-- ✅ Add your MP4 file here -->
         <video controls>
             <source src="Walk_in_Japan_202604031734.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
         </video>
     </div>
 
