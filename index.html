@@ -1,15 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Japan Tourism</title>
 
+    <!-- ✅ Gen-Z Friendly Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont,
+                         'Segoe UI', Roboto, sans-serif;
             background-color: #f5f5f5;
         }
 
@@ -29,6 +36,8 @@
 
         header h1 {
             font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1px;
         }
 
         nav {
@@ -41,7 +50,7 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            font-weight: 500;
             display: inline-block;
             padding: 5px 0;
         }
@@ -55,6 +64,7 @@
         .section h2 {
             color: #c41230;
             font-size: 2rem;
+            font-weight: 600;
         }
 
         .spots {
@@ -67,20 +77,29 @@
             background: white;
             padding: 20px;
             flex: 1 1 calc(33% - 20px);
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .spot img {
-            width: 100%;
-            border-radius: 6px;
+        .spot h3 {
+            font-weight: 600;
         }
+        
+.spot img {
+    width: 100%;
+    height: 220px;           /* ✅ fixed height */
+    object-fit: cover;       /* ✅ crops nicely without distortion */
+    border-radius: 6px;
+    display: block;
+}
+
 
         footer {
             background: #222;
             color: white;
             padding: 20px;
             text-align: center;
+            font-size: 0.9rem;
         }
 
         video {
@@ -88,32 +107,33 @@
             border-radius: 10px;
             margin-top: 20px;
         }
-	
-.japan-packages {
-  font-family: Arial, sans-serif;
-  padding: 40px;
-}
 
-.package-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 6px;
-}
+        /* Packages Section */
+        .japan-packages {
+            padding: 40px;
+        }
 
-.package-card h3 {
-  color: #d6002d;
-}
+        .package-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
 
-.btn-enquire {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #d6002d;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
+        .package-card h3 {
+            color: #d6002d;
+            font-weight: 600;
+        }
 
+        .btn-enquire {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #d6002d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
 
         /* ✅ MOBILE RESPONSIVE FIXES */
         @media (max-width: 768px) {
@@ -153,11 +173,12 @@
             }
 
             body {
-                font-size: 0.9rem;
+                font-size: 0.95rem;
             }
         }
     </style>
 </head>
+
 
 <body>
 
